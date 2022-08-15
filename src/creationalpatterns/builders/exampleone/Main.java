@@ -26,13 +26,14 @@ public class Main {
         System.out.println("---------------------------------------");
         final var carBuildersForDirector = new CarBuilder();
         final var director = new Director(carBuildersForDirector);
-        director.constructSportCar();
+
         System.out.println("SportCar");
+        director.constructSportCar();
         final var sportCar = director.getProduct();
         System.out.println(sportCar.toString());
 
-        director.constructSUV();
         System.out.println("SUV");
+        director.constructSUV();
         final var suvCar = director.getProduct();
         System.out.println(suvCar.toString());
     }
