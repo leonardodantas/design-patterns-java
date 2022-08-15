@@ -26,6 +26,7 @@ public class Main {
         System.out.println("---------------------------------------");
         final var carBuildersForDirector = new CarBuilder();
         final var director = new Director(carBuildersForDirector);
+
         director.constructSportCar();
         System.out.println("SportCar");
         final var sportCar = director.getProduct();
